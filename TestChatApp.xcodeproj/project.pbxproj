@@ -55,7 +55,7 @@
 		A10B23B422BA3EFE00E31C80 /* NSString+JSQMessages.m in Sources */ = {isa = PBXBuildFile; fileRef = A10B237922BA3EFD00E31C80 /* NSString+JSQMessages.m */; };
 		A10B23B522BA3EFE00E31C80 /* UIView+JSQMessages.m in Sources */ = {isa = PBXBuildFile; fileRef = A10B237C22BA3EFD00E31C80 /* UIView+JSQMessages.m */; };
 		A10B23B622BA3EFE00E31C80 /* UIDevice+JSQMessages.m in Sources */ = {isa = PBXBuildFile; fileRef = A10B237F22BA3EFD00E31C80 /* UIDevice+JSQMessages.m */; };
-		A10B23BA22BA3EFE00E31C80 /* JSQSystemSoundPlayer.m in Sources */ = {isa = PBXBuildFile; fileRef = A10B238622BA3EFD00E31C80 /* JSQSystemSoundPlayer.m */; };
+		A10B23BD22BA5E2F00E31C80 /* JSQSystemSoundPlayer.m in Sources */ = {isa = PBXBuildFile; fileRef = A10B23BC22BA5E2F00E31C80 /* JSQSystemSoundPlayer.m */; };
 		A1BA3F1B22B9FB10008462E0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1BA3F1A22B9FB10008462E0 /* AppDelegate.swift */; };
 		A1BA3F1D22B9FB10008462E0 /* ChatNameListVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1BA3F1C22B9FB10008462E0 /* ChatNameListVC.swift */; };
 		A1BA3F2022B9FB10008462E0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A1BA3F1E22B9FB10008462E0 /* Main.storyboard */; };
@@ -181,8 +181,8 @@
 		A10B237D22BA3EFD00E31C80 /* NSBundle+JSQMessages.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSBundle+JSQMessages.h"; sourceTree = "<group>"; };
 		A10B237E22BA3EFD00E31C80 /* JSQSystemSoundPlayer+JSQMessages.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "JSQSystemSoundPlayer+JSQMessages.h"; sourceTree = "<group>"; };
 		A10B237F22BA3EFD00E31C80 /* UIDevice+JSQMessages.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIDevice+JSQMessages.m"; sourceTree = "<group>"; };
-		A10B238622BA3EFD00E31C80 /* JSQSystemSoundPlayer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JSQSystemSoundPlayer.m; sourceTree = "<group>"; };
-		A10B238722BA3EFD00E31C80 /* JSQSystemSoundPlayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSQSystemSoundPlayer.h; sourceTree = "<group>"; };
+		A10B23BB22BA5E2F00E31C80 /* JSQSystemSoundPlayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSQSystemSoundPlayer.h; sourceTree = "<group>"; };
+		A10B23BC22BA5E2F00E31C80 /* JSQSystemSoundPlayer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JSQSystemSoundPlayer.m; sourceTree = "<group>"; };
 		A1BA3F1722B9FB10008462E0 /* TestChatApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TestChatApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A1BA3F1A22B9FB10008462E0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A1BA3F1C22B9FB10008462E0 /* ChatNameListVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatNameListVC.swift; sourceTree = "<group>"; };
@@ -298,26 +298,26 @@
 			isa = PBXGroup;
 			children = (
 				A10B233522BA3EFD00E31C80 /* JSQLocationMediaItem.h */,
-				A10B233622BA3EFD00E31C80 /* JSQMessagesBubbleImage.h */,
-				A10B233722BA3EFD00E31C80 /* JSQAudioMediaItem.m */,
-				A10B233822BA3EFD00E31C80 /* JSQMessage.h */,
-				A10B233922BA3EFD00E31C80 /* JSQMessagesCollectionViewDelegateFlowLayout.h */,
-				A10B233A22BA3EFD00E31C80 /* JSQMessagesAvatarImage.m */,
-				A10B233B22BA3EFD00E31C80 /* JSQPhotoMediaItem.h */,
-				A10B233C22BA3EFD00E31C80 /* JSQMessagesCollectionViewDataSource.h */,
-				A10B233D22BA3EFD00E31C80 /* JSQVideoMediaItem.h */,
-				A10B233E22BA3EFD00E31C80 /* JSQMessageBubbleImageDataSource.h */,
-				A10B233F22BA3EFD00E31C80 /* JSQMediaItem.h */,
-				A10B234022BA3EFD00E31C80 /* JSQMessageMediaData.h */,
-				A10B234122BA3EFD00E31C80 /* JSQMessageData.h */,
-				A10B234222BA3EFD00E31C80 /* JSQAudioMediaItem.h */,
 				A10B234322BA3EFD00E31C80 /* JSQLocationMediaItem.m */,
-				A10B234422BA3EFD00E31C80 /* JSQMessagesBubbleImage.m */,
+				A10B233822BA3EFD00E31C80 /* JSQMessage.h */,
+				A10B234722BA3EFD00E31C80 /* JSQMessage.m */,
+				A10B234222BA3EFD00E31C80 /* JSQAudioMediaItem.h */,
+				A10B233722BA3EFD00E31C80 /* JSQAudioMediaItem.m */,
+				A10B233B22BA3EFD00E31C80 /* JSQPhotoMediaItem.h */,
 				A10B234522BA3EFD00E31C80 /* JSQPhotoMediaItem.m */,
 				A10B234622BA3EFD00E31C80 /* JSQMessagesAvatarImage.h */,
-				A10B234722BA3EFD00E31C80 /* JSQMessage.m */,
+				A10B233A22BA3EFD00E31C80 /* JSQMessagesAvatarImage.m */,
+				A10B233F22BA3EFD00E31C80 /* JSQMediaItem.h */,
 				A10B234822BA3EFD00E31C80 /* JSQMediaItem.m */,
+				A10B233D22BA3EFD00E31C80 /* JSQVideoMediaItem.h */,
 				A10B234922BA3EFD00E31C80 /* JSQVideoMediaItem.m */,
+				A10B233622BA3EFD00E31C80 /* JSQMessagesBubbleImage.h */,
+				A10B234422BA3EFD00E31C80 /* JSQMessagesBubbleImage.m */,
+				A10B234022BA3EFD00E31C80 /* JSQMessageMediaData.h */,
+				A10B234122BA3EFD00E31C80 /* JSQMessageData.h */,
+				A10B233922BA3EFD00E31C80 /* JSQMessagesCollectionViewDelegateFlowLayout.h */,
+				A10B233C22BA3EFD00E31C80 /* JSQMessagesCollectionViewDataSource.h */,
+				A10B233E22BA3EFD00E31C80 /* JSQMessageBubbleImageDataSource.h */,
 				A10B234A22BA3EFD00E31C80 /* JSQMessageAvatarImageDataSource.h */,
 			);
 			path = Model;
@@ -326,11 +326,11 @@
 		A10B234B22BA3EFD00E31C80 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
-				A10B234C22BA3EFD00E31C80 /* JSQMessagesViewController.m */,
-				A10B234D22BA3EFD00E31C80 /* JSQMessagesKeyboardController.m */,
 				A10B234E22BA3EFD00E31C80 /* JSQMessagesKeyboardController.h */,
+				A10B234D22BA3EFD00E31C80 /* JSQMessagesKeyboardController.m */,
 				A10B234F22BA3EFD00E31C80 /* JSQMessagesViewController.xib */,
 				A10B235022BA3EFD00E31C80 /* JSQMessagesViewController.h */,
+				A10B234C22BA3EFD00E31C80 /* JSQMessagesViewController.m */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -403,26 +403,10 @@
 		A10B238122BA3EFD00E31C80 /* JSQSystemSoundPlayer */ = {
 			isa = PBXGroup;
 			children = (
-				A10B238422BA3EFD00E31C80 /* JSQSystemSoundPlayer */,
+				A10B23BB22BA5E2F00E31C80 /* JSQSystemSoundPlayer.h */,
+				A10B23BC22BA5E2F00E31C80 /* JSQSystemSoundPlayer.m */,
 			);
 			path = JSQSystemSoundPlayer;
-			sourceTree = "<group>";
-		};
-		A10B238422BA3EFD00E31C80 /* JSQSystemSoundPlayer */ = {
-			isa = PBXGroup;
-			children = (
-				A10B238522BA3EFD00E31C80 /* Classes */,
-			);
-			path = JSQSystemSoundPlayer;
-			sourceTree = "<group>";
-		};
-		A10B238522BA3EFD00E31C80 /* Classes */ = {
-			isa = PBXGroup;
-			children = (
-				A10B238622BA3EFD00E31C80 /* JSQSystemSoundPlayer.m */,
-				A10B238722BA3EFD00E31C80 /* JSQSystemSoundPlayer.h */,
-			);
-			path = Classes;
 			sourceTree = "<group>";
 		};
 		A1BA3F0E22B9FB10008462E0 = {
@@ -684,7 +668,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A10B23BA22BA3EFE00E31C80 /* JSQSystemSoundPlayer.m in Sources */,
+				A10B23BD22BA5E2F00E31C80 /* JSQSystemSoundPlayer.m in Sources */,
 				A10B23A022BA3EFE00E31C80 /* JSQMessagesMediaPlaceholderView.m in Sources */,
 				A10B238C22BA3EFD00E31C80 /* JSQMessagesCollectionViewFlowLayoutInvalidationContext.m in Sources */,
 				A10B23B422BA3EFE00E31C80 /* NSString+JSQMessages.m in Sources */,
@@ -905,16 +889,18 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
-				CODE_SIGN_STYLE = Manual;
-				DEVELOPMENT_TEAM = B865P7W52D;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 6C2EWSB9Q3;
 				INFOPLIST_FILE = TestChatApp/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.tiwariammit.gmail.com.TestChatApp;
+				PRODUCT_BUNDLE_IDENTIFIER = com.tiwariammit123.gmail.com.TestChatApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE_SPECIFIER = TestDevProvisonalProfile;
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_OBJC_BRIDGING_HEADER = "TestChatApp-Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
@@ -928,14 +914,16 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
-				CODE_SIGN_STYLE = Manual;
-				DEVELOPMENT_TEAM = "";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 6C2EWSB9Q3;
 				INFOPLIST_FILE = TestChatApp/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.tiwariammit.gmail.com.TestChatApp;
+				PRODUCT_BUNDLE_IDENTIFIER = com.tiwariammit123.gmail.com.TestChatApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_OBJC_BRIDGING_HEADER = "TestChatApp-Bridging-Header.h";

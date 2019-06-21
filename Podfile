@@ -6,6 +6,7 @@ target 'TestChatApp' do
 
   #pod 'JSQMessagesViewController'
 
-  pod 'Socket.IO-Client-Swift'
+pod 'Starscream'
+
 
 end

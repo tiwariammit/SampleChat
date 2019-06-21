@@ -13,7 +13,7 @@ class ChatNameListVC: UIViewController {
     
     @IBOutlet weak var tableView: UITableView!
     
-    private let dataSource : [String : String] = ["Amrit": "Hello Amrit", "Shyam" : "Hello shyam how are you?", "Hari" : "Hello Hari, how are you? Where do you live?"]
+    private let dataSource : [String : String] = ["Ram": "Hello", "Shyam" : "Hello ", "Hari" : "Hello "]
     
     
     override func viewDidLoad() {
@@ -56,6 +56,11 @@ extension ChatNameListVC : UITableViewDataSource, UITableViewDelegate{
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath){
         
         let vc = self.storyboard?.instantiateViewController(withIdentifier: "ChatVC") as! ChatVC
+        let keys = Array(self.dataSource.keys)
+        let values = Array(dataSource.values)
+        
+//        vc.senderName = keys[indexPath.row]
+        
         self.navigationController?.pushViewController(vc, animated: true)
     }
     

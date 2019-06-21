@@ -908,6 +908,14 @@ JSQMessagesKeyboardControllerDelegate>
         return;
     }
 
+//    CGFloat bottomPadding;
+//
+//    if (@available(iOS 11.0, *)) {
+//        UIWindow *window = UIApplication.sharedApplication.keyWindow;
+//        //        CGFloat topPadding = window.safeAreaInsets.top;
+//        bottomPadding = window.safeAreaInsets.bottom;
+//    }
+    
     CGFloat heightFromBottom = CGRectGetMaxY(self.collectionView.frame) - CGRectGetMinY(keyboardFrame);
 
     heightFromBottom = MAX(0.0, heightFromBottom);
